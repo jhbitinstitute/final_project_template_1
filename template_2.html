@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #555;
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            overflow-y: auto;
+        }
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        nav ul li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        nav ul li:hover {
+            background-color: #777;
+        }
+        section {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Single Page Profile</h1>
+    </header>
+    <nav>
+        <ul>
+            <li onclick="scrollToSection('section1')">Section 1</li>
+            <li onclick="scrollToSection('section2')">Section 2</li>
+            <li onclick="scrollToSection('section3')">Section 3</li>
+            <li onclick="scrollToSection('section4')">Section 4</li>
+        </ul>
+    </nav>
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+        <p>This is the content of section 1.</p>
+    </section>
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the content of section 2.</p>
+    </section>
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the content of section 3.</p>
+    </section>
+    <section id="section4">
+        <h2>Section 4</h2>
+        <p>This is the content of section 4.</p>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
